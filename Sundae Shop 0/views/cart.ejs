@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sundae Shop</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <a href='/'><h1><span class="neonText">Sun</span><span class="flickerText">d</span><span class="neonText">ae Shop</span></h1>
+        <h2><span class="neonText">Eat</span><span class="flickerText">.</span></h2></a>
+        <h3>Cart</h3>
+        <% let allowCheckout = true %>
+        <% if(cart.items.flag && cart.items.flag > 0) { %>
+        <% allowCheckout = false %>
+            <div id="message">
+                Sorry, your cart contains prohibited items.
+            </div>
+        <% } %>
+        <% if(cart.numItems <= 0) { %>
+        <% allowCheckout = false %>
+            <div id="message">
+                Your cart is empty.
+            </div>
+        <% } else { %>
+            <div id="cart">
+                <% Object.keys(cart.items).forEach((item) => { %>
+                    <%= cart.items[item] %>@<%= flavorList[item].price %> - <%= flavorList[item].name %><br>
+                <% }) %>
+            </div>
+        <% } %>
+
+        <div id="cartButton">
+            <% if(!allowCheckout) { %>
+            <a href="" class="grey">Checkout</a>
+            <% } else { %>
+            <a href="/checkout" class="button">Checkout</a>
+            <% } %>
+            <a href="/clearcart" class="button">Empty Cart</a>
+        </div>
+            
+    </body>
+</html>

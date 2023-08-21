@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sundae Shop</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <a href='/'><h1><span class="neonText">Sun</span><span class="flickerText">d</span><span class="neonText">ae Shop</span></h1>
+        <h2><span class="neonText">Eat</span><span class="flickerText">.</span></h2></a>
+        <h3>Order</h3>
+        <div id="message"><%= message %></div>
+        <div id="order">
+            <% Object.keys(flavorList).forEach((id) => { %>
+                <div class="item">
+                    <%= flavorList[id].name %><br>
+                    <img src="/images/<%= id %>.png"><br>
+                    $<%= flavorList[id].price %><form method="post"><input style="width: 50px;" type="number" id="<%= id %>" name="<%= id %>" min="1" max="5"><input style="width: 100px" type="submit" value="Add to Cart"></form>
+                </div>
+            <% }) %>
+        </div>
+        <div id="cartButton">
+            <a href="/cart" class="button">Cart (<%- cartCount ? cartCount : 0 %>)</a>
+            <a href="/clearcart" class="button">Empty Cart</a>
+        </div>
+            
+    </body>
+</html>

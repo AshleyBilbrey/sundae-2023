@@ -1,0 +1,146 @@
+body{
+    background-color: black;
+    font-family: "Vibur", sans-serif;
+    color: white;
+    padding: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#main {
+    background-color: black;
+    border-radius: 20px;
+    width: calc(96vw - 60px);
+    margin: 2vw;
+    padding: 300px;
+    box-shadow: 10px 10px 10px #c394fc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    line-height: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4em;
+    line-height: 0.5em;
+}
+
+h3 {
+    font-size: 3em;
+    padding-left: 30px;
+    line-height: 0.5em;
+}
+
+
+img {
+    height: 250px;
+    padding-top: 20px;
+}
+
+input {
+    background-color: #2d2d2d;
+    color:white;
+    outline: 0px;
+}
+
+#order {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+#message {
+    color: #c394fc;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+}
+
+#cartButton {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#cart {
+    width: 80vw;
+    margin:auto;
+    font-size: 1.5em;
+}
+
+.item {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.neonText {
+    text-shadow:
+        0 0 4px white,
+        0 0 11px white,
+        0 0 19px white,
+        0 0 40px #c394fc,
+        0 0 80px #c394fc,
+        0 0 90px #c394fc
+}
+
+.button {
+    background-color: #c394fc;
+    color: white;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 20px;
+    margin: 3px;
+}
+
+.grey {
+    background-color: #664d84;
+    color: white;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 20px;
+    margin: 3px;
+}
+
+.button:hover {
+    background-color: #ab6df7;
+}
+
+.flickerText {
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #c394fc,
+        0 0 80px #c394fc,
+        0 0 90px #c394fc
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
