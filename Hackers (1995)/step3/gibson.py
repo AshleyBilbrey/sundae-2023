@@ -24,7 +24,7 @@ def connectionFork(connection, address):
     try:
         response = connection.recv(1024)
         if(response.decode() == solution + "\n" or response.decode() == solution):
-            connection.send("StDeloocnfan3e h okriefrcneto nomto.<eecf  niiri \n".encode())
+            connection.send("Sixmfxt.e ne.tlo etsae 3edh n g<\n".encode())
             connection.send(" 24  86 102 112  13  54  23  66  20  71\n".encode())
             connection.send("101  77 100  41  74   4   8  38   0  61\n".encode())
             connection.send(" 72  22  72 105  64  32  93  93  79 102\n".encode())
