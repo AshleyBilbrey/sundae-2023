@@ -1,5 +1,5 @@
 # Cyber Sundae CTF 2023 Challenges
-Summer Sundae CTF 2023 was a summer-long computer science and cyber competetition by Cyber Security Club at UC Davis. Challenges were released every Sunday and are designed for beginners.
+Summer Sundae CTF 2023 was a summer-long computer science and cyber competition by Cyber Security Club at UC Davis. Challenges were released every Sunday and are designed for beginners.
 
 https://daviscybersec.org
 
