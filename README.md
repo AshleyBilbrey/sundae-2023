@@ -7,6 +7,11 @@ Please note:
 - Some folders have additional project files that are not in the attatchments list. These were used to help create the challenge, but were not provided at the time of the challenge.
 - Some web challenges come with a Dockerfile. [Build](https://docs.docker.com/engine/reference/commandline/build/) and [run](https://docs.docker.com/engine/reference/run/) the Docker container in lieu of connection info.
 
+## Walkthrough
+You can find a walkthrough of some of the easier challenges on the Cyber Security Club at UC Davis website. 
+
+https://daviscybersec.org/slides/2024.02.14_Sundae_CTF_2023_Walkthrough.pdf
+
 ## Authors
 - Ashley
 - Chris
